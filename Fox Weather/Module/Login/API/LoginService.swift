@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class LoginService {
+    public func callAPILogin(username: String, password: String,
+                             onSuccess successCallback: ((_ user: User) -> Void)?,
+                             onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
+        
+        LoginAPICallManager.instance.callAPILogin (
+            username: username, password: password, onSuccess: { (session) in
+                successCallback?(session)
+            },
+            onFailure: { (errorMessage) in
+                failureCallback?(errorMessage)
+            }
+        )
+    }
+}

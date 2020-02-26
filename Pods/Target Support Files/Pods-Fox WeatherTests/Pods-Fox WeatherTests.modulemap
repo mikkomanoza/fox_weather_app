@@ -1,0 +1,6 @@
+framework module Pods_Fox_WeatherTests {
+  umbrella header "Pods-Fox WeatherTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

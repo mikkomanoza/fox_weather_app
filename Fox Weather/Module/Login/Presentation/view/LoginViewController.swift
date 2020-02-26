@@ -9,22 +9,47 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    let presenter = LoginPresenter(loginService: LoginService())
+    var loginDataToDisplay: LoginViewData?
+    
+    var userName: String {
+        return userNameTextField.text ?? ""
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    var password: String {
+        return passwordTextField.text ?? ""
     }
-    */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func login(_ sender: UIButton) {
+        presenter.attachView(view: self)
+        presenter.getLogin(withUsername: userName, password: password)
+    }
+}
 
+extension LoginViewController: LoginView {
+    func setLogin(user: LoginViewData) {
+        loginDataToDisplay = user
+        performSegue(withIdentifier: "showPublicSession", sender: self)
+        print("UserData: - \(user)")
+    }
+    
+    func startLoading() {
+        
+    }
+    
+    func finishLoading() {
+        
+    }
+    
+    func setEmptyLogin() {
+        
+    }
 }

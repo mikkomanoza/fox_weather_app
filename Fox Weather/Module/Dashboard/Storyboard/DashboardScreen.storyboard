@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aef-jV-XYC">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="g7T-o3-pVh">
+            <objects>
+                <viewController id="aef-jV-XYC" customClass="DashboardViewController" customModule="Fox_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Idr-2T-gZN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="0E0-hR-TuE">
+                                <rect key="frame" x="154.5" y="303" width="66" height="61"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="DyI-el-FZU"/>
+                                    <constraint firstAttribute="width" constant="66" id="cuS-Qk-Qm0"/>
+                                </constraints>
+                                <color key="color" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZGK-Hw-rsy">
+                                <rect key="frame" x="44" y="121" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="ecO-Hj-yj6"/>
+                                    <constraint firstAttribute="width" constant="90" id="zdc-Dl-0ch"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ9-sO-f8R">
+                                <rect key="frame" x="142" y="172" width="190" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="2kB-cl-gha"/>
+                                    <constraint firstAttribute="height" constant="39" id="tYP-uP-3Qc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evd-Aq-xka">
+                                <rect key="frame" x="142" y="121" width="190" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="gBa-jn-ilD"/>
+                                    <constraint firstAttribute="width" constant="190" id="ggW-l3-QmT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="19"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="evd-Aq-xka" firstAttribute="top" secondItem="s62-yg-znV" secondAttribute="top" constant="121" id="5Vi-ft-26z"/>
+                            <constraint firstItem="evd-Aq-xka" firstAttribute="leading" secondItem="ZGK-Hw-rsy" secondAttribute="trailing" constant="8" id="6Dx-lJ-7wJ"/>
+                            <constraint firstItem="0E0-hR-TuE" firstAttribute="centerX" secondItem="Idr-2T-gZN" secondAttribute="centerX" id="RzO-Ef-f36"/>
+                            <constraint firstItem="0E0-hR-TuE" firstAttribute="centerY" secondItem="Idr-2T-gZN" secondAttribute="centerY" id="UfR-Pn-IuP"/>
+                            <constraint firstItem="pJ9-sO-f8R" firstAttribute="leading" secondItem="ZGK-Hw-rsy" secondAttribute="trailing" constant="8" id="ZWM-WF-VjQ"/>
+                            <constraint firstItem="pJ9-sO-f8R" firstAttribute="top" secondItem="evd-Aq-xka" secondAttribute="bottom" constant="8" id="boa-O1-X4s"/>
+                            <constraint firstItem="ZGK-Hw-rsy" firstAttribute="leading" secondItem="s62-yg-znV" secondAttribute="leading" constant="44" id="mir-dt-gE5"/>
+                            <constraint firstItem="ZGK-Hw-rsy" firstAttribute="top" secondItem="s62-yg-znV" secondAttribute="top" constant="121" id="y8M-Yb-BCi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s62-yg-znV"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="0E0-hR-TuE" id="L8S-Nk-6AX"/>
+                        <outlet property="currentWeatherImage" destination="ZGK-Hw-rsy" id="Q9u-ss-oYs"/>
+                        <outlet property="mainCurrentWeatherLabel" destination="evd-Aq-xka" id="xbw-rl-5LG"/>
+                        <outlet property="subCurrentWeatherLabel" destination="pJ9-sO-f8R" id="fE0-a8-G7A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzR-xO-myg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639.20000000000005" y="72.413793103448285"/>
+        </scene>
+    </scenes>
+</document>

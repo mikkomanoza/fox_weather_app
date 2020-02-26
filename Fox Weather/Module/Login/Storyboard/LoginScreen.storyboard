@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vYC-So-avH">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -70,7 +70,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="xFa-k7-PXf" kind="presentation" id="aAW-0p-0M7"/>
+                                    <segue destination="xFa-k7-PXf" kind="presentation" modalTransitionStyle="crossDissolve" id="aAW-0p-0M7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
-        <!--MainViewController-->
+        <!--DashboardScreen-->
         <scene sceneID="73E-t1-P82">
             <objects>
-                <viewControllerPlaceholder storyboardName="MainViewController" id="xFa-k7-PXf" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="DashboardScreen" id="xFa-k7-PXf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1F-RP-v2F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="676" y="374"/>
