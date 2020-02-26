@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="nPc-QW-r6U">
+            <objects>
+                <viewController title="Login" id="vYC-So-avH" customClass="LoginViewController" customModule="Fox_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gvu-10-hUE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2020 Joseph Mikko Mañoza. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qz-x0-uYi">
+                                <rect key="frame" x="14" y="618" width="347" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Yhb-Sg-0Mb"/>
+                                    <constraint firstAttribute="width" constant="347" id="tRQ-ZL-mU0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xri-DQ-h6f" userLabel="Logo StackVIew">
+                                <rect key="frame" x="109" y="155.5" width="157" height="206"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="W3L-zL-282">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="142"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="142" id="ml8-zs-zIm"/>
+                                            <constraint firstAttribute="width" constant="157" id="s08-zv-gUJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOX WEATHER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOT-jy-TW0">
+                                        <rect key="frame" x="0.0" y="157" width="157" height="49"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="eHI-uY-Nyw"/>
+                                    <constraint firstAttribute="height" constant="206" id="jtR-FY-a1h"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAH-Wl-SOi" userLabel="Button">
+                                <rect key="frame" x="69" y="448" width="237" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="A6q-f7-XwB"/>
+                                    <constraint firstAttribute="width" constant="237" id="NFp-3q-oJJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title="Login As Guest">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xFa-k7-PXf" kind="presentation" id="aAW-0p-0M7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xri-DQ-h6f" firstAttribute="centerX" secondItem="gvu-10-hUE" secondAttribute="centerX" id="7Hp-0r-Pkv"/>
+                            <constraint firstItem="FAH-Wl-SOi" firstAttribute="centerX" secondItem="gvu-10-hUE" secondAttribute="centerX" id="IHj-9E-8Eo"/>
+                            <constraint firstItem="FAH-Wl-SOi" firstAttribute="top" secondItem="xri-DQ-h6f" secondAttribute="bottom" constant="86.5" id="c4j-a9-PLr"/>
+                            <constraint firstItem="2qz-x0-uYi" firstAttribute="centerX" secondItem="gvu-10-hUE" secondAttribute="centerX" id="nDf-fe-vcu"/>
+                            <constraint firstItem="xri-DQ-h6f" firstAttribute="centerY" secondItem="gvu-10-hUE" secondAttribute="centerY" constant="-75" id="oxx-T3-Ms5"/>
+                            <constraint firstItem="gxl-Ej-9Nz" firstAttribute="bottom" secondItem="2qz-x0-uYi" secondAttribute="bottom" constant="20" id="y3W-Yq-q8O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gxl-Ej-9Nz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQh-V3-FSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+        <!--MainViewController-->
+        <scene sceneID="73E-t1-P82">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainViewController" id="xFa-k7-PXf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1F-RP-v2F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="374"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="64" height="64"/>
+    </resources>
+</document>
